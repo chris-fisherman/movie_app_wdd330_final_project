@@ -1,0 +1,26 @@
+:root {
+    --primary: #52a5e0;
+    --secondary: #f39c12;
+    --body: #101417;
+    --container: #181c1f;
+    --container-clearer: #1f2a30;
+    --border: #2a3b47;
+    --title: #dfe3e6;
+    --sub-title: #8fcdf1;
+    --content: #c8cdd0;
+    --sub-content: #a0a7ac;
+    --icons-white: #bfc8cf;
+    --icons-blue: #89cef7;
+    --icons-background: #005677;
+}
+
+* {
+    font-family: "Inter", sans-serif;
+}
+
+/* BODY */
+body {
+    margin: 0;
+    width: 100%;
+    background-color: var(--body);
+}
