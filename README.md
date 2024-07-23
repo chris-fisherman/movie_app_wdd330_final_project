@@ -1,2 +1,3 @@
-# movie_app_wdd330_final_project
+# Movie App
+
 This is a Final Project for WDD330 Frontend Development II course.
