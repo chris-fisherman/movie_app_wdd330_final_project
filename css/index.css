@@ -155,7 +155,7 @@
 .bannerImage-data {
     color: var(--content);
 }
-#bannerButtons {
+/* #bannerButtons {
     position: absolute;
     top: 45%;
     left: 5%;
@@ -169,7 +169,7 @@
 }
 #bannerButtons button svg {
     color: #ffffff41;
-}
+} */
 
 /* CARDS LIST */
 .cards {
