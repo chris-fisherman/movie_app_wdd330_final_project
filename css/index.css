@@ -170,3 +170,41 @@
 #bannerButtons button svg {
     color: #ffffff41;
 }
+
+/* CARDS LIST */
+.cards {
+    width: 100px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.cards-link {
+    text-decoration: none;
+    color: var(--sub-content);
+}
+.cards-img {
+    width: 100px;
+    border-radius: 5px;
+}
+.cards-title {
+    font-size: var(--subtitle-size);
+    font-weight: 400;
+}
+
+/* HOME LISTS */
+#popularList {
+    margin: 30px 15px;
+}
+#popularList-title {
+    color: var(--content);
+    font-size: var(--title-size);
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+#popularList-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    overflow-x: scroll;
+}
