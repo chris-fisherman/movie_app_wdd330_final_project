@@ -208,3 +208,26 @@
     gap: 15px;
     overflow-x: scroll;
 }
+
+/* FOOTER */
+#footer {
+    width: 100%;
+    height: 300px;
+    margin-top: 80px;
+    padding-bottom: 70px;
+    background-color: var(--container);
+}
+#footer-container {
+    margin: 0 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+#footer-paragraph, #footer-paragraph-2 {
+    color: var(--sub-content);
+    font-size: var(--content-size);
+}
