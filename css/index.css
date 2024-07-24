@@ -85,3 +85,88 @@
 .nav-link-container.active > span {
     font-weight: 600;
 }
+
+/* BANNER */
+#banner {
+    width: 100%;
+    position: relative;
+    overflow-x: hidden;
+
+}
+#bannerContainer {
+    width: 100vw;
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /* overflow-x: hidden; */
+
+    transition: all .3s ease-in-out;
+   
+}
+.bannerImage {
+    width: 100vw;
+    position: relative;
+    
+}
+.bannerImage img {
+    width: 100%;
+    object-fit: cover;
+}
+.bannerImage::after {
+    content: "";
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-image: linear-gradient(to top, var(--body), transparent);
+}
+.bannerImage-overlay {
+    position: absolute;
+    bottom: 30px;
+    margin-left: 15px;
+    color: var(--title);
+    text-align: left;
+    width: 80%;
+    z-index: 3;
+}
+.bannerImage-title {
+    margin-bottom: 10px;
+    font-size: var(--title-size);
+}
+.bannerImage-runtime {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 8px;
+}
+.bannerImage-rating, .bannerImage-rating-total, .detail-rating, .detail-rating-total {
+    color: var(--secondary);
+}
+.bannerImage-rating, .detail-rating {
+    font-weight: bold;
+}
+.bannerImage-rating-total, .bannerImage-data, .detail-rating-total, .detail-rating {
+    font-size: 12px;
+}
+.bannerImage-data {
+    color: var(--content);
+}
+#bannerButtons {
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+#bannerButtons button {
+    background-color: transparent;
+    border: none;
+}
+#bannerButtons button svg {
+    color: #ffffff41;
+}

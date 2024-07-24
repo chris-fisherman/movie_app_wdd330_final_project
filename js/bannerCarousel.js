@@ -11,6 +11,23 @@ async function getPopularMovies() {
 
     displayPopularMovies(data.results);
 
+    // let list = document.querySelector("#bannerContainer");
+    // let items = list.querySelectorAll(".bannerLink");
+    // // const preview = document.querySelector("#bannerButtons_preview");
+    // // const next = document.querySelector("#bannerButtons_next");
+
+    // let index = 1;
+
+    // setInterval(function() {
+    //     let percentage = index * -100;
+    //     list.style.transform = `translateX(${percentage}%)`;
+    //     index++;
+
+    //     if (index > items.length - 1) {
+    //         index = 0;
+    //     }
+    // }, 6000);
+
 }
 
 const displayPopularMovies = (popularMovies) => {
@@ -80,3 +97,25 @@ const displayPopularMovies = (popularMovies) => {
 } 
 
 getPopularMovies();
+
+
+
+// next.addEventListener("click", function() {
+//     list.style.transform = "translateX(-100%)";
+// })
+
+// preview.addEventListener("click", function() {
+//     list.style.transform = "translateX(+100%)";
+// })
+
+// setInterval(function() {
+//     let percentage = index * -100;
+//     list.style.transform = `translateX(${percentage}%)`;
+//     index++;
+
+//     if (index > items.length - 1) {
+//         index = 0;
+//     }
+
+    
+// }, 1000);
