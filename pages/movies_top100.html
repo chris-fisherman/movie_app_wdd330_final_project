@@ -8,17 +8,18 @@
     <link rel="shortcut icon" href="/assets/play_wave_favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/movies_top100.css">
 
     <style>
         @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
     </style>
 
-    <title>Playwave | Home</title>
+    <title>Playwave | Top 100 Movies</title>
 </head>
 
 <body>
     <!-- HEADER -->
-    <header id="header">
+    <header id="header" >
         <div id="headerMain-container">
             <a href="/index.html" id="headerMain-logo">
                 <img src="/assets/play_wave_logo.png" alt="Header Logo" width="100" />
@@ -69,53 +70,14 @@
         </nav>
     </header>
 
-    <!-- BANNER -->
-    <div id="banner">
-        <div id="bannerContainer">
-            <!-- Stuff in bannerCarousel.js -->
+    <!-- MAIN -->
+    <main id="main">
+        <h1 id="main-title">Top 100 Movies</h1>
+
+        <div id="main-cards">
+            <!-- Stuff in moviesTop100.js -->
         </div>
-        
-        <!-- <div id="bannerButtons">
-            <button title="Preview" id="bannerButtons_preview">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
-                    <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"/>
-                </svg>
-            </button>
-            
-            <button title="Next" id="bannerButtons_next">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
-                    <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
-                </svg>
-            </button>
-        </div> -->
-    </div>
-
-    <!-- POPULAR SECTION -->
-    <section id="popularList">
-        <h2 id="popularList-title">Popular</h2>
-
-        <div id="popularList-cards">
-            <!-- Stuff in homeLists.js -->
-        </div>
-    </section>
-
-    <!-- UPCOMING SECTION -->
-    <section id="upcomingList">
-        <h2 id="upcomingList-title">Upcoming</h2>
-
-        <div id="upcomingList-cards">
-            <!-- Stuff in homeLists.js -->
-        </div>
-    </section>
-
-    <!-- TOP RATED SECTION -->
-    <section id="ratedList">
-        <h2 id="ratedList-title">Upcoming</h2>
-
-        <div id="ratedList-cards">
-            <!-- Stuff in homeLists.js -->
-        </div>
-    </section>
+    </main>
 
     <!-- FOOTER -->
     <footer id="footer">
@@ -130,8 +92,8 @@
     </footer>
 
     <!-- SCRIPTS -->
-    <script src="/js/bannerCarousel.js"></script>
-    <script src="/js/homeLists.js"></script>
+     <script src="/js/moviesTop100.js"></script>
+    
 </body>
 
 </html>
