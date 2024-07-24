@@ -193,16 +193,16 @@
 }
 
 /* HOME LISTS */
-#popularList {
+#popularList, #upcomingList, #ratedList {
     margin: 30px 15px;
 }
-#popularList-title {
+#popularList-title, #upcomingList-title, #ratedList-title {
     color: var(--content);
     font-size: var(--title-size);
     font-weight: 500;
     margin-bottom: 25px;
 }
-#popularList-cards {
+#popularList-cards, #upcomingList-cards, #ratedList-cards {
     display: flex;
     flex-direction: row;
     gap: 15px;
