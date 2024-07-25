@@ -1,21 +1,21 @@
-const popularContainer = document.querySelector("#main-cards");
+const upcomingContainer = document.querySelector("#main-cards");
 
-const urlPopularDetails = 'https://api.themoviedb.org/3/movie/popular?api_key=3635f4a229260177fe2b5498e1ba967e&language=en-US';
+const urlUpcomingDetails = 'https://api.themoviedb.org/3/movie/upcoming?api_key=3635f4a229260177fe2b5498e1ba967e&language=en-US';
 
-async function getPopularDetails() {
+async function getUpcomingDetails() {
 
-    const response = await fetch(urlPopularDetails);
+    const response = await fetch(urlUpcomingDetails);
     const data = await response.json();
 
     console.log(data.results); // testing
 
-    displayPopularDetails(data.results);
+    displayUpcomingDetails(data.results);
 
 }
 
-const displayPopularDetails = (popularDetails) => {
+const displayUpcomingDetails = (upcomingDetails) => {
 
-    popularDetails.forEach(movie => {
+    upcomingDetails.forEach(movie => {
 
         // link container
         // let link = document.createElement("a");
@@ -110,10 +110,10 @@ const displayPopularDetails = (popularDetails) => {
         card.appendChild(imgOverlayContainer);
         card.appendChild(overview);
 
-        popularContainer.appendChild(card);
+        upcomingContainer.appendChild(card);
         
     });
 
 }
 
-getPopularDetails();
+getUpcomingDetails();
