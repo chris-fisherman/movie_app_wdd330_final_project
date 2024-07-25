@@ -25,6 +25,8 @@
 #main-title {
     color: var(--title);
     font-size: var(--title-size);
+    border-bottom: solid 3px var(--secondary);
+    padding-bottom: 20px;
 }
 
 #main-cards {
@@ -32,7 +34,7 @@
     flex-direction: column;
     justify-content: start;
     gap: 15px;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .cards-title {
@@ -44,6 +46,15 @@
 .detail-container {
     margin: 10px 0;
     display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: var(--container);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.detail-imgOverlayContainer {
+    display: flex;
     flex-direction: row;
     gap: 15px;
 }
@@ -53,15 +64,9 @@
     border-radius: 5px;
 }
 
-.detail-position {
-    margin-top: 0;
-    margin-bottom: 5px;
-    color: var(--secondary);
-}
-
 .detail-title {
     color: var(--title);
-    font-size: var(--content-size);
+    font-size: var(--subtitle-size);
     font-weight: 400;
 }
 
@@ -73,6 +78,7 @@
 .detail-rating-genres-container {
     display: flex;
     flex-direction: column;
+    justify-content: baseline;
     gap: 10px;
 }
 
@@ -93,6 +99,12 @@
     font-size: var(--content-size);
 }
 
+.detail-date {
+    color: var(--sub-content);
+    font-size: var(--content-size);
+    
+}
+
 .genre-container {
     display: flex;
     flex-wrap: wrap;
@@ -108,7 +120,6 @@
 }
 
 .detail-description {
-    margin: 0 15px;
     color: var(--content);
-    font-size: var(--subtitle-size);
+    font-size: var(--content-size);
 }
