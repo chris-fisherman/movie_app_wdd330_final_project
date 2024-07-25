@@ -18,6 +18,7 @@
     --content-size: 12px;
 }
 
+
 #main {
     margin: 0 15px;
 }
@@ -122,4 +123,34 @@
 .detail-description {
     color: var(--content);
     font-size: var(--content-size);
+}
+
+
+
+@media (width > 1200px) {
+    #main {
+        padding-top: 150px;
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+    #main-title {
+        font-size: 28px;
+        padding-bottom: 40px;
+    }
+    #main-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+    }
+
+    .detail-container img {
+        width: 150px;
+        border-radius: 8px;
+    }
+    .detail-title {
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .detail-rating, .detail-rating-total, .detail-vote, .detail-time, .detail-date, .detail-description  {
+        font-size: 14px;
+    }
 }

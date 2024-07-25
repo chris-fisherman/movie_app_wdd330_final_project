@@ -339,3 +339,106 @@
     color: var(--sub-content);
     font-size: var(--content-size);
 }
+
+
+
+@media (width > 1200px) {
+    #header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: absolute;
+        z-index: 2;
+        background: linear-gradient(to bottom, var(--body), transparent);
+    }
+    #headerMain-container {
+        margin-left: 150px;
+    }
+    #headerMain-logo img {
+        width: 130px;
+    }
+    #nav {
+        position: static;
+        width: 30%;
+        margin-right: 150px;
+        background-color: transparent;
+    }
+    #nav a {
+        color: var(--content);
+        font-size: var(--subtitle-size);
+        text-decoration: none;
+        background-color: transparent;
+    }
+    #nav #nav-list {
+        background-color: transparent;
+    }
+
+    #banner {
+        position: relative;
+    }
+    #banner img {
+        height: 85vh;
+    }
+    .bannerImage::after {
+        height: 500px;
+    }
+    .bannerImage-overlay {
+        bottom: 180px;
+        margin-left: 150px;
+        width: 80%;
+    }
+    .bannerImage-title {
+        font-size: 80px;
+    }
+    .bannerImage-runtime {
+        gap: 16px;
+    }
+    .bannerImage-rating {
+        font-weight: bold;
+        font-size: 30px;
+    }
+    .bannerImage-rating-total, .bannerImage-data {
+        font-size: 25px;
+    }
+
+    #popularList, #upcomingList, #ratedList {
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+
+    .cards {
+        width: 180px;
+        gap: 10px;
+    }
+    .cards-img {
+        width: 180px;
+        border-radius: 10px;
+    }
+    .cards-title {
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    #popularList-title, #upcomingList-title, #ratedList-title {
+        font-size: 28px;
+        font-weight: 500;
+        margin-bottom: 40px;
+    }
+    #popularList-cards, #upcomingList-cards, #ratedList-cards {
+        gap: 25px;
+    }
+
+    #footer {
+        height: 400px;
+        margin-top: 160px;
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    #footer-paragraph, #footer-paragraph-2 {
+        color: var(--sub-content);
+        font-size: 18px;
+    }
+    #footer-logo {
+        width: 250px;
+    }
+}
